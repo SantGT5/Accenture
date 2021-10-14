@@ -36,7 +36,13 @@ html {
   border-radius: 10px;
 }
 
-/* Otros */
+/* Others styles */
+.hr {
+  width: 9.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 .margin {
   margin: 0.5em;
 }
@@ -54,13 +60,14 @@ html {
   justify-content: center;
 }
 
-.colorWhite {
+.backGroundWhite {
   background-color: #ffffff;
 }
 
-.hr {
-  border-bottom: 1.5px solid black;
-  width: 9em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+.colorBlue{
+  color: #0000ff;
+}
+
+.fontWeightBolder{
+  font-weight: bolder;
 }

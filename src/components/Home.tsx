@@ -1,9 +1,8 @@
 import axios from "axios";
-import { listenerCount } from "process";
 import React, { useEffect, useState } from "react";
-import { Card } from "./Global/Card";
+import { Card } from "../Global/Card";
 
-export const Filter = () => {
+export const Home = () => {
   const [data, setData] = useState<any>([]);
 
   console.log(data);
@@ -29,15 +28,18 @@ export const Filter = () => {
         return (
           <div key={i} className="margin">
             <Card
-              // img={elem.links.mission_patch}
+              img={elem.links.mission_patch}
+              flightNumber={elem.flight_number}
               nameSpace={elem.mission_name}
-              missionIds={elem.mission_id.map((elem: any) => (
-                <li>{elem}</li>
-              ))}
+              missionIds={elem.mission_id.map((elem: any) =>
+                elem ? <li>{elem}</li> : ""
+              )}
               launchYear={elem.launch_year}
-              successLaunch={elem?.launch_success}
-              successLanding={elem.rocket.first_stage.cores.map(
-                (land: any) => land.land_success
+              successLaunch={elem.launch_success.toString()}
+              successLanding={elem.rocket.first_stage.cores.map((land: any) =>
+                land.land_success !== null
+                  ? land.land_success.toString()
+                  : "Not found"
               )}
             />
           </div>
