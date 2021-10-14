@@ -1,0 +1,66 @@
+/* Body Color */
+
+#root {
+  background-color: #e8e6e6;
+}
+
+html {
+  background-color: #e8e6e6;
+}
+
+/* Flex Containers */
+
+.flexColumn {
+  flex-direction: column;
+}
+
+.flexWrap {
+  flex-wrap: wrap;
+}
+
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+}
+.displayFlex {
+  display: flex;
+}
+
+/* Filter BorderStyle */
+
+.filterBorder {
+  margin: 2em;
+  padding: 0.8em;
+  min-width: 13.5em;
+  max-width: 13.5em;
+  border-radius: 10px;
+}
+
+/* Otros */
+.margin {
+  margin: 0.5em;
+}
+
+.margin15em{
+    margin: 1.5em;
+}
+
+.heightFit{
+    height: fit-content;
+}
+
+.center {
+  display: grid;
+  justify-content: center;
+}
+
+.colorWhite {
+  background-color: #ffffff;
+}
+
+.hr {
+  border-bottom: 1.5px solid black;
+  width: 9em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
