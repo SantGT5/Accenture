@@ -19,8 +19,6 @@ export const LandSuccessful = () => {
   const { id } = useParams<{ id: string }>();
   const [status, setStatus] = useState<dataAPI[]>([]);
 
-  console.log("status -> ", status);
-
   useEffect(() => {
     async function fetchStatus() {
       try {
