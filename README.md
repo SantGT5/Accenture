@@ -1,5 +1,3 @@
-# ### SpaceX Launch Programs
-
 ![image](https://user-images.githubusercontent.com/83282533/137602949-d0b3dfcb-8282-4c8b-b1ef-381beb068eea.png)
 
 
