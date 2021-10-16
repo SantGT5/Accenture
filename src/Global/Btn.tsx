@@ -1,10 +1,8 @@
-import React from "react";
-
 import { Link } from "react-router-dom";
 
 interface BtnProps {
   des: string;
-  to: string
+  to: string;
 }
 
 export const Btn = (props: BtnProps) => {

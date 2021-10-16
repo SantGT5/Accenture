@@ -8,7 +8,7 @@ html {
   background-color: #e8e6e6;
 }
 
-/* Flex Containers */
+/* Flex Containers and Grid */
 
 .flexColumn {
   flex-direction: column;
@@ -26,6 +26,11 @@ html {
   display: flex;
 }
 
+.center {
+  display: grid;
+  justify-content: center;
+}
+
 /* Filter BorderStyle */
 
 .filterBorder {
@@ -34,6 +39,20 @@ html {
   min-width: 13.5em;
   max-width: 13.5em;
   border-radius: 10px;
+}
+
+/* Colors */
+
+.colorBlack {
+  color: #000000;
+}
+
+.colorBlue {
+  color: #0000ff;
+}
+
+.backGroundWhite {
+  background-color: #ffffff;
 }
 
 /* Others styles */
@@ -47,36 +66,18 @@ html {
   margin: 0.5em;
 }
 
-.margin15em{
-    margin: 1.5em;
+.margin15em {
+  margin: 1.5em;
 }
 
-.heightFit{
-    height: fit-content;
+.heightFit {
+  height: fit-content;
 }
 
-.center {
-  display: grid;
-  justify-content: center;
-}
-
-.colorBlack{
-  color: #000000;
-}
-
-.colorBlue{
-  color: #0000ff;
-}
-
-.backGroundWhite {
-  background-color: #ffffff;
-}
-
-
-.fontWeightBolder{
+.fontWeightBolder {
   font-weight: bolder;
 }
 
-.listStyle{
+.listStyle {
   list-style: circle;
 }
