@@ -43,13 +43,13 @@ export const LandSuccessful = () => {
                   : "Not Found"
               }
               successLanding={elem.rocket.first_stage.cores.map((land: any) => {
-                
-                
-                const landing = land.land_success.toString()
+                const landing = land.land_success.toString();
 
-                return land.land_success !== null
-                  ? <li>{landing}</li>
-                  : "Not found";
+                return land.land_success !== null ? (
+                  <li>{landing}</li>
+                ) : (
+                  "Not found"
+                );
               })}
             />
           </div>

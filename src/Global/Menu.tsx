@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Btn } from "./Btn";
 
 
@@ -7,7 +8,12 @@ export const FilterMenu = () => {
   return (
 
     <div className="filterBorder backGroundWhite heightFit">
+      <div className="flexBetween">
       <h5>Filters</h5>
+      <Link to="/" className="colorBlack">
+          <span className="margin"><i className="fa-solid fa-house"></i></span>
+          </Link>
+          </div>
       <div className="center">
         <div className="margin">
           <div>

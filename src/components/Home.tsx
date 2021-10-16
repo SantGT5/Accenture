@@ -36,11 +36,13 @@ export const Home = () => {
               )}
               launchYear={elem.launch_year}
               successLaunch={elem.launch_success.toString()}
-              successLanding={elem.rocket.first_stage.cores.map((land: any) =>
-                land.land_success !== null
-                  ? land.land_success.toString()
-                  : "Not found"
-              )}
+              successLanding={elem.rocket.first_stage.cores.map((land: any) => {
+                return land.land_success !== null ? (
+                  <li>{land.land_success.toString()}</li>
+                ) : (
+                  "Not found"
+                );
+              })}
             />
           </div>
         );

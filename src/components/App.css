@@ -60,13 +60,18 @@ html {
   justify-content: center;
 }
 
-.backGroundWhite {
-  background-color: #ffffff;
+.colorBlack{
+  color: #000000;
 }
 
 .colorBlue{
   color: #0000ff;
 }
+
+.backGroundWhite {
+  background-color: #ffffff;
+}
+
 
 .fontWeightBolder{
   font-weight: bolder;
