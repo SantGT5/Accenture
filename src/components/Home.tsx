@@ -2,15 +2,25 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Card } from "../Global/Card";
 
+interface dataAPI{
+  flight_number: number
+  launch_success: boolean
+  launch_year: string
+  links: {mission_patch: string}
+  mission_id: string[]
+  mission_name: string
+  rocket: {first_stage:{cores: []}}
+}
+
 export const Home = () => {
-  const [data, setData] = useState<any>([]);
+  const [data, setData] = useState<dataAPI[]>([]);
 
   console.log(data);
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const response: any = await axios.get(
+        const response = await axios.get<dataAPI[]>(
           "https://api.spacexdata.com/v3/launches?limit=100"
         );
 
@@ -24,7 +34,7 @@ export const Home = () => {
 
   return (
     <div className="margin15em displayFlex flexWrap">
-      {data.map((elem: any, i: number) => {
+      {data.map((elem: dataAPI, i: number) => {
         return (
           <div key={i} className="margin">
             <Card

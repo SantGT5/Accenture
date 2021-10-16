@@ -2,10 +2,10 @@ interface CardProps {
   img: string;
   flightNumber: number;
   nameSpace: string;
-  missionIds: string[];
+  missionIds: {};
   launchYear: string;
   successLaunch: string;
-  successLanding: boolean;
+  successLanding: {};
 }
 
 export const Card = (props: CardProps) => {
