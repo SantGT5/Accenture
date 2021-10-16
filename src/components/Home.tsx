@@ -1,5 +1,7 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
+import axios from "axios";
+
+// Global Component
 import { Card } from "../Global/Card";
 
 interface dataAPI{

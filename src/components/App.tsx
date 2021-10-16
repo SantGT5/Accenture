@@ -1,6 +1,8 @@
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+
+// Components and Global Components
 
 import { NavBar } from "../Global/NavBar";
 import { FilterMenu } from "../Global/Menu";
@@ -18,11 +20,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/launch_year/:id" component={LaunchYear} />
-          <Route
-            exact
-            path="/launch_success/:id"
-            component={SuccessfulLaunch}
-          />
+          <Route exact path="/launch_success/:id" component={SuccessfulLaunch} />
           <Route exact path="/land_success/:id" component={LandSuccessful} />
         </Switch>
       </div>

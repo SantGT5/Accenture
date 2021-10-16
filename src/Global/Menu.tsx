@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+
+// Global Component
 import { Btn } from "./Btn";
 
 export const FilterMenu = () => {
