@@ -18,6 +18,7 @@ interface dataAPI {
 }
 
 export const SuccessfulLaunch = () => {
+  
   const { id } = useParams<{ id: string }>();
   const [status, setStatus] = useState<dataAPI[]>([]);
 

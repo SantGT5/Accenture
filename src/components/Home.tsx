@@ -15,6 +15,7 @@ interface dataAPI{
 }
 
 export const Home = () => {
+  
   const [data, setData] = useState<dataAPI[]>([]);
 
   useEffect(() => {

@@ -18,6 +18,7 @@ interface dataAPI {
 }
 
 export const LaunchYear = () => {
+  
   const { id } = useParams<{ id: string }>();
   const [status, setStatus] = useState<dataAPI[]>([]);
 
