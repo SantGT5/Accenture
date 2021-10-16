@@ -26,7 +26,7 @@ export const Card = (props: CardProps) => {
         </h5>
         <div>
           <span className="fontWeightBolder">Mission Ids: </span>{" "}
-          <ol>{props.missionIds}</ol>
+          <ol className="listStyle">{props.missionIds}</ol>
         </div>
         <div>
           <span>
@@ -41,10 +41,8 @@ export const Card = (props: CardProps) => {
           </span>
         </div>
         <div>
-          <span>
-            <span className="fontWeightBolder">Successful Landing: </span>
-            {props.successLanding}
-          </span>
+          <span className="fontWeightBolder">Successful Landing: </span>
+          <ol className="listStyle">{props.successLanding}</ol>
         </div>
       </div>
     </div>

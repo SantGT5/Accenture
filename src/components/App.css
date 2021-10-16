@@ -71,3 +71,7 @@ html {
 .fontWeightBolder{
   font-weight: bolder;
 }
+
+.listStyle{
+  list-style: circle;
+}

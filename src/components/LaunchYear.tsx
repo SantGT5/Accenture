@@ -5,7 +5,6 @@ import img from "../image/NASA_logo.svg.png";
 import { useParams } from "react-router-dom";
 import { Card } from "../Global/Card";
 
-interface LaunchYearProps {}
 
 export const LaunchYear = () => {
   const { id } = useParams<{ id: string }>();

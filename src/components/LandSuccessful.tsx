@@ -8,7 +8,7 @@ import { Card } from "../Global/Card";
 export const LandSuccessful = () => {
   const { id } = useParams<{ id: string }>();
   const [status, setStatus] = useState<any>([]);
-console.log(id)
+
   useEffect(() => {
     async function fetchStatus() {
       try {
@@ -27,7 +27,6 @@ console.log(id)
   return (
     <div className="margin15em displayFlex flexWrap">
       {status.map((elem: any, i: number) => {
-
         return (
           <div key={i} className="margin">
             <Card
@@ -43,11 +42,15 @@ console.log(id)
                   ? elem.launch_success.toString()
                   : "Not Found"
               }
-              successLanding={elem.rocket.first_stage.cores.map((land: any) =>
-                land.land_success !== null
-                  ? land.land_success.toString()
-                  : "Not found"
-              )}
+              successLanding={elem.rocket.first_stage.cores.map((land: any) => {
+                
+                
+                const landing = land.land_success.toString()
+
+                return land.land_success !== null
+                  ? <li>{landing}</li>
+                  : "Not found";
+              })}
             />
           </div>
         );
